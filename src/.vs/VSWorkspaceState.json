@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HUD",
+    "\\HUD\\Layout",
+    "\\HUD\\MatchBar",
+    "\\HUD\\MatchOverview",
+    "\\HUD\\Players",
+    "\\HUD\\Radar"
+  ],
+  "SelectedNode": "\\HUD\\Layout\\Layout.tsx",
+  "PreviewInSolutionExplorer": false
+}

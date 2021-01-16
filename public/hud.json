@@ -1,0 +1,12 @@
+{
+    "name":"EHLS_HUD",
+    "version":"1.6.3",
+    "author":"Raptr3x",
+    "legacy": false,
+    "radar": true,
+    "killfeed": true,
+    "boltobserv":{
+        "css":true,
+        "maps":true
+    }
+}
