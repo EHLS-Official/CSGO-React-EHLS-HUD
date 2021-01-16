@@ -1,11 +1,12 @@
 import React from 'react';
 import ad_img from "../../advertisement/reklama.jpg";
+import "./ad.scss";
 
-export default class Advertisement{
+export default class Advertisement {
 
     render() {
         return (
-            <div className="advertisement" style={{ backgroundImage: `url('${ad_img}.jpg')` }}>
+            <div className="advertisement">
 
             </div>
         );
