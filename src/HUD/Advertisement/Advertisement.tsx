@@ -6,9 +6,7 @@ export default class Advertisement {
 
     render() {
         return (
-            <div className="advertisement">
-
-            </div>
+            <div className="advertisement"></div>
         );
     }
 }
