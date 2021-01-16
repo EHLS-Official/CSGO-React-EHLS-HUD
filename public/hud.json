@@ -1,7 +1,7 @@
 {
-    "name":"EHLS_HUD",
+    "name":"EHLS HUD",
     "version":"1.6.3",
-    "author":"Raptr3x",
+    "author":"GospoD & Raptr3x",
     "legacy": false,
     "radar": true,
     "killfeed": true,

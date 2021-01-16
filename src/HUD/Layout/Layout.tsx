@@ -1,7 +1,6 @@
 import React from "react";
 import TeamBox from "./../Players/TeamBox";
 import MatchBar from "../MatchBar/MatchBar";
-import SeriesBox from "../MatchBar/SeriesBox";
 import Observed from "./../Players/Observed";
 import { CSGO, Team } from "csgogsi-socket";
 import { Match } from "../../api/interfaces";
@@ -12,7 +11,6 @@ import { GSI, actions } from "./../../App";
 import MoneyBox from '../SideBoxes/Money';
 import UtilityLevel from '../SideBoxes/UtilityLevel';
 import Killfeed from "../Killfeed/Killfeed";
-import MapSeries from "../MapSeries/MapSeries";
 import Overview from "../Overview/Overview";
 import Tournament from "../Tournament/Tournament";
 import Pause from "../PauseTimeout/Pause";
@@ -78,21 +76,12 @@ export default class Layout extends React.Component<Props, State> {
 
     return (
       <div className="layout">
-        <div className={`players_alive`}>
-          <div className="title_container">Players alive</div>
-          <div className="counter_container">
-            <div className={`team_counter ${left.side}`}>{leftPlayers.filter(player => player.state.health > 0).length}</div>
-            <div className={`vs_counter`}>VS</div>
-            <div className={`team_counter ${right.side}`}>{rightPlayers.filter(player => player.state.health > 0).length}</div>
-          </div>
-        </div>
         <Killfeed />
         <Overview match={match} map={game.map} players={game.players || []} />
         <RadarMaps match={match} map={game.map} game={game} />
         <MatchBar map={game.map} phase={game.phase_countdowns} bomb={game.bomb} match={match} />
         <Pause  phase={game.phase_countdowns}/>
         <Timeout map={game.map} phase={game.phase_countdowns} />
-        <SeriesBox map={game.map} phase={game.phase_countdowns} match={match} />
 
         <Tournament />
 
@@ -104,7 +93,6 @@ export default class Layout extends React.Component<Props, State> {
 
         <Trivia />
 
-        <MapSeries teams={[left, right]} match={match} isFreezetime={isFreezetime} map={game.map} />
         <div className={"boxes left"}>
           <UtilityLevel side={left.side} players={game.players} show={isFreezetime && !forceHide} />
           <SideBox side="left" hide={forceHide} />
