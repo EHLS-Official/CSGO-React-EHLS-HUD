@@ -1,6 +1,7 @@
 import React from "react";
 import TeamBox from "./../Players/TeamBox";
 import MatchBar from "../MatchBar/MatchBar";
+import SeriesBox from "../MatchBar/SeriesBox";
 import Observed from "./../Players/Observed";
 import { CSGO, Team } from "csgogsi-socket";
 import { Match } from "../../api/interfaces";
@@ -82,7 +83,8 @@ export default class Layout extends React.Component<Props, State> {
         <MatchBar map={game.map} phase={game.phase_countdowns} bomb={game.bomb} match={match} />
         <Pause  phase={game.phase_countdowns}/>
         <Timeout map={game.map} phase={game.phase_countdowns} />
-
+        <SeriesBox map={game.map} phase={game.phase_countdowns} match={match} />
+      
         <Tournament />
 
             <Observed player={game.player} veto={this.getVeto()} round={game.map.round + 1} />
