@@ -52,7 +52,7 @@ code {
   --color-defuse: #2222f2;
 }
 
-.advertisement {
+/*.advertisement {
     background-image: url('/assets/images/reklama.png');
     position: fixed;
     bottom: 30px;
@@ -62,4 +62,4 @@ code {
     padding: 30px;
     opacity: 1;
     transition: opacity 0.75s;
-}
+}*/
