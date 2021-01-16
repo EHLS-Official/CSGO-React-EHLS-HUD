@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\HUD\\Advertisement",
+    "\\src\\HUD\\Layout",
+    "\\src\\HUD\\MatchBar"
   ],
+  "SelectedNode": "\\src\\index.tsx",
   "PreviewInSolutionExplorer": false
 }
