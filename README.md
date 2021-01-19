@@ -1,6 +1,6 @@
 <p align="center">
-	<p align="center"><img src="icon.png" alt="Logo" width="80" height="80"></p>
-	<p align="center" style="font-weight:400; font-size: 32px">EHLS CS:GO HUD</p>
+	<p align="center"><img src="icon.png" alt="Logo" width="120" height="120"></p>
+	<p align="center" style="font-weight:600; font-size: 72px"><strong>EHLS CS:GO HUD<strong></p>
 </p>
 
 # EHLS React CS:GO HUD
