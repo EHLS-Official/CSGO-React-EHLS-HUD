@@ -1,7 +1,6 @@
 <p align="center">
-	<p align="center" style="font-weight:600; font-type:italic; letter-spacing:1pt; font-size:20pt;">Powered by <strong>EHLS Team<strong></p>
-	<p align="center"><img src="public/thumb.png" alt="Logo" width="80" height="80"></p>
-	<p align="center" style="font-weight:400;">EHLS CS:GO HUD</p>
+	<p align="center"><img src="icon.png" alt="Logo" width="80" height="80"></p>
+	<p align="center" style="font-weight:400; font-size: 32px">EHLS CS:GO HUD</p>
 </p>
 
 # EHLS React CS:GO HUD
