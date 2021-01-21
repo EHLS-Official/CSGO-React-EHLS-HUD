@@ -60,13 +60,3 @@ code {
   --mainT: #ffa000;
 }
 
-.advertisement {
-  /*background-image: url('/assets/images/reklama.png');*/
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  padding: 30px;
-  transition: opacity 0.75s;
-}

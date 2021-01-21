@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
-    "\\src\\HUD\\Advertisement",
+    "\\src\\assets",
+    "\\src\\HUD",
     "\\src\\HUD\\Layout",
     "\\src\\HUD\\MatchBar"
   ],
-  "SelectedNode": "\\src\\index.tsx",
+  "SelectedNode": "\\craco.config.js",
   "PreviewInSolutionExplorer": false
 }

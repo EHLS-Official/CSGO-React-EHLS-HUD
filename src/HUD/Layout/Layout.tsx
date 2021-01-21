@@ -16,6 +16,8 @@ import Overview from "../Overview/Overview";
 import Tournament from "../Tournament/Tournament";
 import Pause from "../PauseTimeout/Pause";
 import Timeout from "../PauseTimeout/Timeout";
+import "./../Reklama/reklama.scss";
+
 
 interface Props {
   game: CSGO,

@@ -1,0 +1,11 @@
+.advertisement {
+    background-image: url("./../../assets/reklama.png");
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*620x80 ili 620x100*/
+    width: 620px;
+    height: 100px;
+    transition: opacity 0.75s;
+}
