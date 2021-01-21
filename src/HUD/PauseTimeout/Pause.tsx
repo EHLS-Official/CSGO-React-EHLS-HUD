@@ -1,5 +1,6 @@
 import React from "react";
 import { PhaseRaw } from "csgogsi-socket";
+import "./pause-timeout.scss";
 
 interface IProps {
     phase: PhaseRaw | null
