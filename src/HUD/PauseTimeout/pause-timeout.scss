@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+#pause {
+  box-shadow: var(--main-panel-color-04) 20px 20px 0 0;
+}
+
 #pause,
 #timeout {
   text-transform: uppercase;
@@ -56,6 +60,7 @@
   transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out 1s;
 }
+
 
 #timeout.T {
   box-shadow: var(--color-new-t) 20px 20px 0 0;
