@@ -130,7 +130,7 @@
       flex-direction: row;
       &.CT {
         .team-name {
-          text-align: end;
+          text-align: flex-end;
         }
       }
       &.T {
