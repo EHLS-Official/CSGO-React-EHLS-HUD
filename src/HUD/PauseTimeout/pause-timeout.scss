@@ -32,7 +32,7 @@
   color: #fff;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
   text-shadow: -2px 4px 6px rgba(0, 0, 0, 0.7);
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
 }
 
 #timeout::after,
@@ -60,7 +60,6 @@
   transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out 1s;
 }
-
 
 #timeout.T {
   box-shadow: var(--color-new-t) 20px 20px 0 0;

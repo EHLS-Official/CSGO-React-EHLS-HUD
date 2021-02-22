@@ -125,12 +125,13 @@
   .main_row {
     font-weight: 600;
     .logo {
-      height: 43px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 57px;
       background-color: var(--main-panel-color);
+      border-radius: 5px 5px 0 0;
+
       img {
         height: 100px;
         width: 100px;
