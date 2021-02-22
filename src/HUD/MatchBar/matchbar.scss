@@ -119,6 +119,7 @@
       align-items: center;
       overflow: hidden;
       background-color: var(--sub-panel-color);
+
       img {
         max-width: 100%;
         max-height: 75%;
@@ -130,7 +131,7 @@
       flex-direction: row;
       &.CT {
         .team-name {
-          text-align: end;
+          justify-content: flex-end;
         }
       }
       &.T {
@@ -146,7 +147,7 @@
       justify-content: center;
       flex-direction: row-reverse;
       .logo {
-        justify-content: flex-start;
+        justify-content: center;
       }
     }
   }
@@ -163,7 +164,7 @@
     font-weight: 600;
     font-size: 30px;
     background-color: none;
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
   }
   .round-thingy {
     display: none;
@@ -203,50 +204,53 @@
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  background-color: var(--main-panel-color);
-  width: 500px;
-  height: 0px;
+  background-color: rgba(32, 35, 55, 0.6);
+  width: 0;
+  height: 160px;
   opacity: 0;
-  font-size: 40px;
-  transition: opacity 0.1s ease-in-out 0.1s, width 0.1s ease-in-out,
-    box-shadow 0.1s ease-in-out 0.5s;
+  font-size: 50px;
+  transition: width 0.4s ease-in-out;
   color: #fff !important;
   font-weight: bold;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
-  text-shadow: -3px 7px 2px rgba(0, 0, 0, 0.7);
+  text-shadow: -3px 7px 30px rgba(0, 0, 0, 0.4);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  &::after {
-    content: "";
-    position: absolute;
-    left: -70px;
-    top: -50%;
-    background-image: url("./../../assets/ehls.png");
-    background-size: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 250px;
-    z-index: -1;
-    opacity: 0.7;
-    transition: all 0.5s ease-out;
-    transition-delay: 2s;
+  // font-family: "Roboto", sans-serif;
+  padding: 0 30px;
+
+  span {
+    &:nth-of-type(2) {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 30px;
+      opacity: 0.6;
+    }
   }
+
   &.show {
-    height: 130px;
+    width: 550px;
     opacity: 1;
-    transition: width 0.2s ease-in-out 0.2s, opacity 0.2s ease-in-out,
-      box-shadow 0.2s ease-in-out 0.5s;
+
+    transition: width 0.4s ease-in-out, box-shadow 0.4s 0.4s ease-in-out;
   }
+
   &.T {
-    box-shadow: var(--color-new-t) 20px 20px 0 0;
+    box-shadow: var(--color-new-t) 0px 0px 0 0;
+
+    &.show {
+      box-shadow: rgba(246, 70, 95, 0.6) 15px 15px 0 0;
+    }
   }
 
   &.CT {
-    box-shadow: var(--color-new-ct) 20px 20px 0 0;
+    box-shadow: var(--color-new-ct) 0px 0px 0 0;
+
+    &.show {
+      box-shadow: rgba(57, 110, 199, 0.6) 15px 15px 0 0;
+    }
   }
 }
 
