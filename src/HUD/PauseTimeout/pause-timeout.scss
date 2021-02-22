@@ -6,10 +6,6 @@
   justify-content: center;
 }
 
-#pause {
-  box-shadow: var(--main-panel-color-04) 20px 20px 0 0;
-}
-
 #pause,
 #timeout {
   text-transform: uppercase;
@@ -17,54 +13,39 @@
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  background-color: var(--main-panel-color);
-  width: 500px;
-  height: 0px;
+  background-color: rgba(32, 35, 55, 0.6);
+  width: 0;
+  height: 160px;
   opacity: 0;
-  font-size: 40px;
+  font-size: 50px;
+  transition: width 0.4s ease-in-out;
+  color: #fff !important;
   font-weight: bold;
-  transition: opacity 0.1s ease-in-out, width 0.1s ease-in-out,
-    box-shadow 0.1s ease-in-out 0.5s;
+  text-shadow: -3px 7px 30px rgba(0, 0, 0, 0.4);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
-  text-shadow: -2px 4px 6px rgba(0, 0, 0, 0.7);
   // font-family: "Roboto", sans-serif;
+  padding: 0 30px;
+
+  &.show {
+    width: 550px;
+    opacity: 1;
+
+    transition: width 0.4s ease-in-out, box-shadow 0.4s 0.4s ease-in-out;
+  }
 }
 
-#timeout::after,
-#pause::after {
-  content: "";
-  position: absolute;
-  left: -70px;
-  top: -50%;
-  background-image: url("./../../assets/ehls.png");
-  background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 250px;
-  z-index: -1;
-  opacity: 0.7;
-  transition: all 0.5s ease-out;
-  transition-delay: 2s;
+#timeout.show.T {
+  box-shadow: rgba(246, 70, 95, 0.6) 15px 15px 0 0;
 }
 
-#pause.show,
-#timeout.show {
-  height: 130px;
-  opacity: 1;
-  transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out 1s;
+#timeout.show.CT {
+  box-shadow: rgba(57, 110, 199, 0.6) 15px 15px 0 0;
 }
 
-#timeout.T {
-  box-shadow: var(--color-new-t) 20px 20px 0 0;
-}
-
-#timeout.CT {
-  box-shadow: var(--color-new-ct) 20px 20px 0 0;
+#pause.show {
+  box-shadow: rgba(32, 35, 55, 0.6) 15px 15px 0 0;
 }
