@@ -1,5 +1,6 @@
 @import "fonts/montserrat.css";
 @import "fonts/stratum2.css";
+
 html,
 body,
 #root {
@@ -9,7 +10,7 @@ body,
 
 body {
   margin: 0;
-  font-family: "Stratum2", "Montserrat", "Roboto", sans-serif;
+  font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*background-image: url('./assets/bg.png');/**/
@@ -48,7 +49,7 @@ code {
   --dev-purple: #c800ff;
   --color-t: #c19511;
   --color-ct: #5788a8;
-  --color-new-t: #f6465f;
+  --color-new-t: rgba(246, 70, 95, 0.8);
   --color-new-ct: rgba(57, 110, 199, 0.8);
   --color-bomb: rgba(242, 34, 34, 0.6);
   --color-defuse: #2222f2;
@@ -58,6 +59,5 @@ code {
   --lightT: #c8a738;
   --mainCT: #00a0ff;
   --mainT: #ffa000;
-  --main-panel-color-04: rgba(32, 35, 55, 0.4)
+  --main-panel-color-04: rgba(32, 35, 55, 0.4);
 }
-
